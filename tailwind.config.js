@@ -2,7 +2,18 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        lemon: ['lemon', 'sans-serif']
+      },
+      spacing: {
+        '700px': '700px'
+      },
+      colors: {
+        'grayDark': 'rgb(35,35,35)',
+        'grayLight': 'rgb(43,43,43)'
+      }
+    },
   },
   plugins: [],
 }

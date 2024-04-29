@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'lemon';
+    src: url('fonts/LEMONMILK-light.otf') format('otf'),
+         url('fonts/LEMONMILK-lightItalic.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
