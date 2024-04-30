@@ -22,7 +22,7 @@ class ToDo {
         //adiciona evento as task
         this.addEvents()
 
-        this.checkTasks('add') //chamando método para add ou remover mensagem
+        this.checkTasks('add') //chamando método para add ou remover mensagem final
     }
 
     removeTask(task) {
@@ -33,7 +33,7 @@ class ToDo {
         //remover da lista
         parentElement.remove()
 
-        this.checkTasks('remove')
+        this.checkTasks('remove') //chamando método para add ou remover mensagem final
     }
 
     completeTask(done) {
@@ -44,10 +44,9 @@ class ToDo {
 
     addEvents() {
 
-        let removeBtns = document.querySelectorAll('.fa-trash')
-        let removeBtn = removeBtns[removeBtns.length - 1] //pra evitar o mesmo evento mais de uma vez no mesmo elemento
-        let DoneBtns = document.querySelectorAll('.fa-check')
-        let DoneBtn = DoneBtns[DoneBtns.length - 1]
+        let removeBtn = document.querySelector('.task:last-child .fa-trash') //seleciona o último botão de remoção
+
+        let DoneBtn = document.querySelector('.task:last-child .fa-check') //seleciona o último botão de conclusão
 
         //adicionar evento de remover
         removeBtn.addEventListener('click', function() {
