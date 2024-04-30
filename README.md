@@ -29,6 +29,6 @@ Este projeto consiste em uma lista de tarefas simples, com métodos de adicionar
 https://pabloquirino.github.io/to-do-list/src/
 
 ### Captura de tela:
- ![PrintScreen do projeto](./PrintSc/calculadora.png) 
+ ![PrintScreen do projeto](./prtSc/todolist.png) 
 
 
